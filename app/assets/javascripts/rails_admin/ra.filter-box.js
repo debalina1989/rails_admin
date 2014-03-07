@@ -48,8 +48,8 @@
           var multiple_values = ((field_value instanceof Array) ? true : false)
           var control = '<select style="display:' + (multiple_values ? 'none' : 'inline-block') + '" ' + (multiple_values ? '' : 'name="' + value_name + '"') + ' data-name="' + value_name + '" class="select-single input-small">' +
               '<option value="_discard">...</option>' +
-              '<option ' + (field_value == "_present" ? 'selected="selected"' : '') + ' value="_present">Is present</option>' +
-              '<option ' + (field_value == "_blank"   ? 'selected="selected"' : '') + ' value="_blank">Is blank</option>' +
+              '<option ' + (field_value == "_not_null" ? 'selected="selected"' : '') + ' value="_not_null">Is present</option>' +
+              '<option ' + (field_value == "_null"   ? 'selected="selected"' : '') + ' value="_null">Is blank</option>' +
               '<option disabled="disabled">---------</option>' +
               field_options +
             '</select>' +
